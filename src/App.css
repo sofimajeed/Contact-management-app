@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -12,7 +13,19 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.text-2xl{
+  background: #ef3434;
+}
+.corona-title{
+  z-index: 5000;
+}
+.responsive{}
+.create-contact, .edit-contact{
+  color: white;
+  border-radius: 8px;
+  padding: 2% 1%;
+  background-color: rgb(16, 172, 172);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,6 +40,15 @@
 .App-link {
   color: #61dafb;
 }
+@media only screen and (max-width: 600px) {
+.buttons{
+  flex-direction: column;
+  margin: 3px;
+}
+.edit-btn{
+  padding: 5% 42%;
+}
+}
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +58,5 @@
     transform: rotate(360deg);
   }
 }
+
+
